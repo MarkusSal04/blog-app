@@ -20,7 +20,7 @@ db.on('connected', () => {
 
 app.get('/', (req, res) => {
   try {
-    const.posts = await Post.find()
+    const posts = await Post.find()
     res.json(posts)
   } catch (error) {
     res.status(500).json({ error: error.message })
