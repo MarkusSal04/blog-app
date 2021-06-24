@@ -1,4 +1,5 @@
 import './App.css';
+
 import { Route, Switch, } from "react-router-dom"
 
 
@@ -23,11 +24,11 @@ function App() {
           <div>lets be friends</div>
           <div>we like cheese</div>
         </Route>
-        <Route exact path="/posts">
+        <Route exact path="/api/posts/">
           <Posts />
         </Route>
 
-        <Route exact path="/posts/:id">
+        <Route exact path="/api/posts/:id">
           <Post />
         </Route>
 
