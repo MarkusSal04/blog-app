@@ -9,6 +9,7 @@ const router = Router()
 // when access to '/products', gonna call for controllers.getProducts method
 // '/products' is the http url, controllers.getProducts is the function allowed access to within that url.
 
+//ych
 router.get('/posts', controllers.getPosts)
 router.get('/post/:id', controllers.getPost)
 router.post('/post', controllers.createPost)
